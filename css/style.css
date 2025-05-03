@@ -147,7 +147,7 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url("/image/woman-6754248.jpg");
+    background-image: url("image/woman-6754248.jpg");
     background-size: cover;
     background-position: center;
     color: var(--white);
