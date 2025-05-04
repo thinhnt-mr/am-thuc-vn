@@ -37,14 +37,9 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
-    <!-- Font (Nếu sử dụng Google Fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- CSS và Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="css/style.css?v=2">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon_io/apple-touch-icon.png">
@@ -58,11 +53,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Vị Quê Việt">
+
+    <link rel="preload" as="image" href="image/woman-6754248.webp">
 </head>
 <body>
 <header>
     <div class="container header-container">
-        <a href="index.html" class="logo"><img src="image/image-removebg-preview.png" width="160" height="45"></a>
+        <a href="index.html" class="logo"><img src="image/image-removebg-preview.png" width="160" height="48"></a>
         <div class="mobile-menu-btn">
             <div class="menu-icon">
                 <span></span>
@@ -113,7 +110,7 @@
             <!-- Item 1 -->
             <div class="specialty-card">
                 <div class="specialty-img">
-                    <img src="image/beef-noodle-soup-6729018.webp" width="100%" height="100%" alt="Phở Hà Nội">
+                    <img src="image/beef-noodle-soup-6729018.webp" width="100%" height="auto" alt="Phở Hà Nội">
                 </div>
                 <div class="specialty-info">
                     <h3>Phở Hà Nội</h3>
@@ -124,7 +121,7 @@
             <!-- Item 2 -->
             <div class="specialty-card">
                 <div class="specialty-img">
-                    <img src="image/bun-bo-hue.webp" width="100%" height="100%" alt="Bún bò Huế">
+                    <img src="image/bun-bo-hue.webp" width="100%" height="auto" alt="Bún bò Huế">
                 </div>
                 <div class="specialty-info">
                     <h3>Bún bò Huế</h3>
@@ -135,7 +132,7 @@
             <!-- Item 3 -->
             <div class="specialty-card">
                 <div class="specialty-img">
-                    <img src="image/hu-tieu-nam-vang.jpg" width="100%" height="100%" alt="Hủ tiếu Nam Vang">
+                    <img src="image/hu-tieu-nam-vang.jpg" width="100%" height="auto" alt="Hủ tiếu Nam Vang">
                 </div>
                 <div class="specialty-info">
                     <h3>Hủ tiếu Nam Vang</h3>
@@ -146,7 +143,7 @@
             <!-- Item 4 -->
             <div class="specialty-card">
                 <div class="specialty-img">
-                    <img src="image/Cao%20lầu%20Hội%20An.jpg" width="100%" height="100%" alt="Cao lầu Hội An">
+                    <img src="image/Cao%20lầu%20Hội%20An.jpg" width="100%" height="auto" alt="Cao lầu Hội An">
                 </div>
                 <div class="specialty-info">
                     <h3>Cao lầu Hội An</h3>
@@ -157,7 +154,7 @@
             <!-- Item 5 -->
             <div class="specialty-card">
                 <div class="specialty-img">
-                    <img src="image/Bánh%20xèo%20miền%20Tây.jpg" width="100%" height="100%" alt="Bánh xèo miền Tây">
+                    <img src="image/Bánh%20xèo%20miền%20Tây.jpg" width="100%" height="auto" alt="Bánh xèo miền Tây">
                 </div>
                 <div class="specialty-info">
                     <h3>Bánh xèo miền Tây</h3>
@@ -168,7 +165,7 @@
             <!-- Item 6 -->
             <div class="specialty-card">
                 <div class="specialty-img">
-                    <img src="image/Bánh%20cuốn%20Thanh%20Trì.jpg" width="100%" height="100%" alt="Bánh cuốn Thanh Trì">
+                    <img src="image/Bánh%20cuốn%20Thanh%20Trì.jpg" width="100%" height="auto" alt="Bánh cuốn Thanh Trì">
                 </div>
                 <div class="specialty-info">
                     <h3>Bánh cuốn Thanh Trì</h3>
@@ -193,7 +190,7 @@
                 <!-- North specialties -->
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Bún%20chả%20Hà%20Nội.jpg" width="100%" height="100%" alt="Bún chả Hà Nội">
+                        <img src="image/Bún%20chả%20Hà%20Nội.jpg" width="100%" height="auto" alt="Bún chả Hà Nội">
                     </div>
                     <div class="specialty-info">
                         <h3>Bún chả Hà Nội</h3>
@@ -202,7 +199,7 @@
                 </div>
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Chả%20cá%20Lã%20Vọng.webp" width="100%" height="100%" alt="Chả cá Lã Vọng">
+                        <img src="image/Chả%20cá%20Lã%20Vọng.webp" width="100%" height="auto" alt="Chả cá Lã Vọng">
                     </div>
                     <div class="specialty-info">
                         <h3>Chả cá Lã Vọng</h3>
@@ -211,7 +208,7 @@
                 </div>
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Bánh%20tôm%20Hồ%20Tây.jpg" width="100%" height="100%"  alt="Bánh tôm Hồ Tây">
+                        <img src="image/Bánh%20tôm%20Hồ%20Tây.jpg" width="100%" height="auto" alt="Bánh tôm Hồ Tây">
                     </div>
                     <div class="specialty-info">
                         <h3>Bánh tôm Hồ Tây</h3>
@@ -225,7 +222,7 @@
                 <!-- Central specialties -->
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Mì%20Quảng.webp" width="100%" height="100%" alt="Mì Quảng">
+                        <img src="image/Mì%20Quảng.webp" width="100%" height="auto" alt="Mì Quảng">
                     </div>
                     <div class="specialty-info">
                         <h3>Mì Quảng</h3>
@@ -234,7 +231,7 @@
                 </div>
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Bánh%20bèo%20Huế.jpg" width="100%" height="100%" alt="Bánh bèo Huế">
+                        <img src="image/Bánh%20bèo%20Huế.jpg" width="100%" height="auto" alt="Bánh bèo Huế">
                     </div>
                     <div class="specialty-info">
                         <h3>Bánh bèo Huế</h3>
@@ -243,7 +240,7 @@
                 </div>
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Bánh%20ướt%20thịt%20nướng.webp" width="100%" height="100%" alt="Bánh ướt thịt nướng">
+                        <img src="image/Bánh%20ướt%20thịt%20nướng.webp" width="100%" height="auto" alt="Bánh ướt thịt nướng">
                     </div>
                     <div class="specialty-info">
                         <h3>Bánh ướt thịt nướng</h3>
@@ -257,7 +254,7 @@
                 <!-- South specialties -->
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Bánh%20canh%20Trảng%20Bàng.jpg" width="100%" height="100%" alt="Bánh canh Trảng Bàng">
+                        <img src="image/Bánh%20canh%20Trảng%20Bàng.jpg" width="100%" height="auto" alt="Bánh canh Trảng Bàng">
                     </div>
                     <div class="specialty-info">
                         <h3>Bánh canh Trảng Bàng</h3>
@@ -266,7 +263,7 @@
                 </div>
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/Lẩu%20đặc%20trưng%20miền%20Tây.jpg" width="100%" height="100%" alt="Lẩu mắm">
+                        <img src="image/Lẩu%20đặc%20trưng%20miền%20Tây.jpg" width="100%" height="auto" alt="Lẩu mắm">
                     </div>
                     <div class="specialty-info">
                         <h3>Lẩu mắm</h3>
@@ -275,7 +272,7 @@
                 </div>
                 <div class="specialty-card">
                     <div class="specialty-img">
-                        <img src="image/com-tam-sai-gon.jpg" width="100%" height="100%" alt="Cơm tấm Sài Gòn">
+                        <img src="image/com-tam-sai-gon.jpg" width="100%" height="auto" alt="Cơm tấm Sài Gòn">
                     </div>
                     <div class="specialty-info">
                         <h3>Cơm tấm Sài Gòn</h3>
@@ -292,49 +289,49 @@
         <h2 class="section-title">Thư Viện Ảnh</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="image/beef-noodle-soup-6729018.webp" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/beef-noodle-soup-6729018.webp" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Phở Hà Nội</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/bun-bo-hue.webp" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/bun-bo-hue.webp" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Bún bò Huế</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/Bánh%20xèo%20miền%20Tây.jpg" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/Bánh%20xèo%20miền%20Tây.jpg" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Bánh xèo</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/goi-cuon.jpg" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/goi-cuon.jpg" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Gỏi cuốn</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/banh-mi-ha-noi.jpg" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/banh-mi-ha-noi.jpg" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Bánh mì Việt Nam</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/che-cac-loai.jpg" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/che-cac-loai.jpg" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Chè các loại</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/egg-coffee-4977310_1280.jpg" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/egg-coffee-4977310_1280.jpg" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Cà phê trứng</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image/Bánh%20cuốn%20Thanh%20Trì.jpg" width="100%" height="100%" alt="Ẩm thực Việt Nam">
+                <img src="image/Bánh%20cuốn%20Thanh%20Trì.jpg" width="100%" height="auto" alt="Ẩm thực Việt Nam">
                 <div class="gallery-overlay">
                     <h3>Bánh cuốn</h3>
                 </div>
@@ -433,6 +430,6 @@
 <div class="back-to-top">
     <i class="fas fa-arrow-up"></i>
 </div>
-<script src="js/script.js" defer></script>
+<script src="js/script.js?v=2" defer></script>
 </body>
 </html>
