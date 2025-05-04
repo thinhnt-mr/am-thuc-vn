@@ -579,7 +579,7 @@ footer {
 
 @media (max-width: 768px) {
     .hero {
-        background-image: url("../image/Betterimage.ai_mobie.jpeg");
+        background-image: url("../image/woman-6754248.webp");
     }
     .mobile-menu-btn {
         display: block;
@@ -643,17 +643,13 @@ footer {
         padding: 40px 0;
         transition: var(--transition);
     }
-
-    .nav-menu a {
-        padding: 16px 80px 16px 60px;
-    }
     .nav-menu.active {
         left: 0;
     }
 
     .nav-menu li {
-        padding-left: 5px;
-        margin: 15px 0;
+        margin: 2px 0;
+        padding: 15px 66px 15px 68px;
     }
 
     .hero h1 {
