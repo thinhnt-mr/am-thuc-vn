@@ -655,18 +655,20 @@ footer {
         transition: var(--transition);
     }
 
-    .nav-menu a {
-        padding:15px 80px 15px 50px;
-    }
     .nav-menu.active {
         left: 0;
     }
-
+    .menu-link{
+        padding: 10px 50px;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
     .nav-menu li {
-        width: 100%;
+        width: auto;
+        height: auto;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        padding:10px 0 10px 0;
-        margin: 5px 0;
+        margin: 10px 0;
         transform: translateX(-100px);
         opacity: 0;
     }
