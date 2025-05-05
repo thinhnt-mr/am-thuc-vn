@@ -139,11 +139,14 @@ header {
 }
 /* Animation cho mobile menu */
 @keyframes slideInRight {
-    from {
-        transform: translateX(-100px);
+    0% {
+        transform: translateX(-50px);
         opacity: 0;
     }
-    to {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
@@ -652,58 +655,65 @@ footer {
         align-items: start;
         padding: 40px 0;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: var(--transition);
+        transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
     .nav-menu.active {
         left: 0;
     }
     .menu-link{
-        padding: 10px 50px;
+        padding: 15px 55px;
         margin: 0;
         width: auto;
         height: auto;
+        display: block;
+        transition: color 0.3s ease;
     }
     .nav-menu li {
         width: auto;
         height: auto;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        margin: 10px 0;
-        transform: translateX(-100px);
+        margin: 15px 0;
+        transform: translateX(-50px);
+        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease;
         opacity: 0;
     }
 
     .nav-menu.active li {
-        animation: slideInRight 0.5s forwards;
+        transform: translateX(0);
+        opacity: 1;
+        transition-delay: calc(0.1s * var(--order));
     }
 
     /* Thiết lập độ trễ khác nhau cho từng mục menu */
-    .nav-menu.active li:nth-child(1) {
-        animation-delay: 0.1s;
+    .nav-menu li:nth-child(1) {
+        --order: 1;
     }
 
-    .nav-menu.active li:nth-child(2) {
-        animation-delay: 0.2s;
+    .nav-menu li:nth-child(2) {
+        --order: 2;
     }
 
-    .nav-menu.active li:nth-child(3) {
-        animation-delay: 0.3s;
+    .nav-menu li:nth-child(3) {
+        --order: 3;
     }
 
-    .nav-menu.active li:nth-child(4) {
-        animation-delay: 0.4s;
+    .nav-menu li:nth-child(4) {
+        --order: 4;
     }
 
-    .nav-menu.active li:nth-child(5) {
-        animation-delay: 0.5s;
+    .nav-menu li:nth-child(5) {
+        --order: 5;
     }
 
-    .nav-menu.active li:nth-child(6) {
-        animation-delay: 0.6s;
+    .nav-menu li:nth-child(6) {
+        --order: 6;
     }
+
     .nav-menu li:last-child {
         border-bottom: none;
     }
+
     .hero h1 {
         font-size: 2.2rem;
     }
